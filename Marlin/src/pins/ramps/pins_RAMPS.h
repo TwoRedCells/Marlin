@@ -40,7 +40,7 @@
  *
  *  Other pins_MYBOARD.h files may override these defaults
  *
- *  Differences between
+ *  Differences between 
  *  RAMPS_13 | RAMPS_14
  *         7 | 11
  */
@@ -142,18 +142,32 @@
   #define Z_CS_PIN                            40
 #endif
 
-#define E0_STEP_PIN                           26
-#define E0_DIR_PIN                            28
-#define E0_ENABLE_PIN                         24
-#ifndef E0_CS_PIN
-  #define E0_CS_PIN                           42
+//#define E0_STEP_PIN                           26
+//#define E0_DIR_PIN                            28
+//#define E0_ENABLE_PIN                         24
+//#ifndef E0_CS_PIN
+//  #define E0_CS_PIN                           42
+//#endif
+
+//#define E1_STEP_PIN                           36
+//#define E1_DIR_PIN                            34
+//#define E1_ENABLE_PIN                         30
+//#ifndef E1_CS_PIN
+//  #define E1_CS_PIN                           44
+//#endif
+
+#define X2_STEP_PIN                           26
+#define X2_DIR_PIN                            28
+#define X2_ENABLE_PIN                         24
+#ifndef X2_CS_PIN
+  #define X2_CS_PIN                           42
 #endif
 
-#define E1_STEP_PIN                           36
-#define E1_DIR_PIN                            34
-#define E1_ENABLE_PIN                         30
-#ifndef E1_CS_PIN
-  #define E1_CS_PIN                           44
+#define Z2_STEP_PIN                           36
+#define Z2_DIR_PIN                            34
+#define Z2_ENABLE_PIN                         30
+#ifndef Z2_CS_PIN
+  #define Z2_CS_PIN                           44
 #endif
 
 //
@@ -172,9 +186,10 @@
 //
 // SPI for Max6675 or Max31855 Thermocouple
 //
-#ifndef MAX6675_SS_PIN
-  #define MAX6675_SS_PIN                      66  // Don't use 53 if using Display/SD card (SDSS) or 49 (SD_DETECT_PIN)
-#endif
+
+//#ifndef MAX6675_SS_PIN
+//  #define MAX6675_SS_PIN                      66  // Don't use 53 if using Display/SD card (SDSS) or 49 (SD_DETECT_PIN)
+//#endif
 
 //
 // Augmentation for auto-assigning RAMPS plugs
